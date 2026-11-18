@@ -1,0 +1,146 @@
+
+/* 1. Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Main webpage */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0efff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* 3. Main container */
+.container {
+    background-color: #fff;
+    width: 100%;
+    max-width: 650px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 4. Heading */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+/* 5. Subtitle */
+.subtitle {
+    text-align: center;
+    color: #888;
+    margin-bottom: 25px;
+}
+
+/* 6. Input and button section */
+.input-section {
+    display: flex;
+    gap: 10px;
+}
+
+/* 7. Task input */
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+}
+
+/* 8. Input focus */
+input[type="text"]:focus {
+    border-color: #6554d9;
+}
+
+/* 9. Buttons */
+button {
+    padding: 12px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* 10. Add button */
+#addBtn {
+    background-color: #6554d9;
+}
+
+#addBtn:hover {
+    background-color: #5141bd;
+}
+
+/* 11. Task statistics */
+.task-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #777;
+    font-size: 14px;
+}
+
+/* 12. Task list */
+ul {
+    list-style: none;
+}
+
+/* 13. Individual task */
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #f8f8fc;
+    border-radius: 6px;
+}
+
+/* 14. Task text */
+.task-text {
+    flex: 1;
+    color: #333;
+}
+
+/* 15. Completed task */
+.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* 16. Task action buttons */
+.edit-btn {
+    background-color: #e5b943;
+    padding: 8px 14px;
+}
+
+.delete-btn {
+    background-color: #c94f58;
+    padding: 8px 14px;
+}
+
+/* 17. Responsive design */
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+    }
+
+    .input-section {
+        flex-direction: column;
+    }
+
+    li {
+        flex-wrap: wrap;
+    }
+}
